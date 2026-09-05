@@ -1,2 +1,2 @@
 console.log("riverous iniciado");
-const enterBtn = document.getElementById("enter-Btn");
+const enterbtn = document.getElementById("enter-btn");
