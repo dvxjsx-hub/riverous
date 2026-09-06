@@ -7,7 +7,7 @@ const profileBtn = document.getElementById("profile-btn");
 const profileMenu = document.getElementById("profile-menu");
 const profileUsername = document.getElementById("profile-username");
 
-profileUsername.textContent = "currentUser";
+profileUsername.textContent = currentUser;
 profileBtn.addEventListener("click", function() {profileMenu.style.display = "block";});
 const closeProfileBtn = document.getElementById("close-profile-btn"); closeProfileBtn.addEventListener("click", function() {profileMenu.style.display = "none";});
 
