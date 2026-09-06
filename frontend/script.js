@@ -12,3 +12,7 @@ const settingsBtn = document.getElementById("settings-btn");
 const settingsMenu = document.getElementById("settings-menu");
 
 settingsBtn.addEventListener("click", function() {settingsMenu.style.display = "block";});
+
+const closeSettingsBtn = document.getElementById("close-settings-btn");
+
+closeSettingsBtn.addEventLitener("click", function() {settingsMenu.style.display = "none";});
