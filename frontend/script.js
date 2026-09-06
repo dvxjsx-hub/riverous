@@ -7,3 +7,8 @@ const profileMenu = document.getElementById("profile-menu");
 
 profileBtn.addEventListener("click", function() {profileMenu.style.display = "block";});
 const closeProfileBtn = document.getElementById("close-profile-btn"); closeProfileBtn.addEventListener("click", function() {profileMenu.style.display = "none";});
+
+const settingsBtn = document.getElementById("settings-btn");
+const settingsMenu = document.ElementById("settings-menu");
+
+settingsBtn.addEventListener("click", function() {settingsMenu.style.display = "block";});
