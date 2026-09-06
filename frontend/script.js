@@ -9,6 +9,6 @@ profileBtn.addEventListener("click", function() {profileMenu.style.display = "bl
 const closeProfileBtn = document.getElementById("close-profile-btn"); closeProfileBtn.addEventListener("click", function() {profileMenu.style.display = "none";});
 
 const settingsBtn = document.getElementById("settings-btn");
-const settingsMenu = document.ElementById("settings-menu");
+const settingsMenu = document.getElementById("settings-menu");
 
 settingsBtn.addEventListener("click", function() {settingsMenu.style.display = "block";});
