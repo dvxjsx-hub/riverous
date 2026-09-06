@@ -7,7 +7,6 @@ enterBtn.addEventListener("click", function() {currentUser = usernameInput.value
 
 const profileBtn = document.getElementById("profile-btn");
 const profileMenu = document.getElementById("profile-menu");
-const profileUsername = document.getElementById("profile-username");
 
 profileUsername.textContent = currentUser;
 profileBtn.addEventListener("click", function() {profileMenu.style.display = "block";});
