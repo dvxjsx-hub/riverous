@@ -1,5 +1,6 @@
 console.log("riverous iniciado");
 const enterBtn = document.getElementById("enter-btn");
+const usernameInput = document.getElementById("username");
 let currentUser = "INVITADO";
 enterBtn.addEventListener("click", function() {document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block";});
 
