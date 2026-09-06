@@ -15,4 +15,4 @@ settingsBtn.addEventListener("click", function() {settingsMenu.style.display = "
 
 const closeSettingsBtn = document.getElementById("close-settings-btn");
 
-closeSettingsBtn.addEventLitener("click", function() {settingsMenu.style.display = "none";});
+closeSettingsBtn.addEventListener("click", function() {settingsMenu.style.display = "none";});
