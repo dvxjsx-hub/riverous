@@ -2,7 +2,8 @@ console.log("riverous iniciado");
 const enterBtn = document.getElementById("enter-btn");
 const usernameInput = document.getElementById("username");
 let currentUser = "INVITADO";
-enterBtn.addEventListener("click", function() {document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block";});
+
+enterBtn.addEventListener("click", function() {currentUser = usernameInput.value; document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block";});
 
 const profileBtn = document.getElementById("profile-btn");
 const profileMenu = document.getElementById("profile-menu");
