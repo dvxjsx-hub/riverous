@@ -6,3 +6,4 @@ const profileBtn = document.getElementById("profile-btn");
 const profileMenu = document.getElementById("profile-menu");
 
 profileBtn.addEventListener("click", function() {profileMenu.style.display = "block";});
+const closeProfileBtn = document.getElementById("close-profile-btn"); closeProfileBtn.addEvenListener("click", function() {profileMenu.style.display = "none";});
