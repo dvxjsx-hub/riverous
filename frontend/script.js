@@ -1,7 +1,7 @@
 console.log("riverous iniciado");
 const enterBtn = document.getElementById("enter-btn");
 const usernameInput = document.getElementById("username");
-let currentUser = "INVITADO";
+let currentUser = "INVITADO"; profileUsername = document.getElementeById("profile-username");
 
 enterBtn.addEventListener("click", function() {currentUser = usernameInput.value; profileUsername.textContent = currentUser; document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block";});
 
