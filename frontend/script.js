@@ -3,6 +3,7 @@ const enterBtn = document.getElementById("enter-btn");
 const usernameInput = document.getElementById("username");
 let currentUser = "INVITADO"; const profileUsername = document.getElementById("profile-username");
 const profileGames = document.getElementById("profile-games");
+let currentGames = 0;
 
 enterBtn.addEventListener("click", function() {currentUser = usernameInput.value.trim(); if (currentUser === "") {currentUser = "JUGADOR";} profileUsername.textContent = currentUser; document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block";});
 
