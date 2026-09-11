@@ -4,6 +4,8 @@ const usernameInput = document.getElementById("username");
 let currentUser = "INVITADO"; const profileUsername = document.getElementById("profile-username");
 const profileGames = document.getElementById("profile-games");
 let currentGames = 0;
+function addGame() {currentGames = currentGames + 1; profileGames.textContent = currentGames;}
+
 
 enterBtn.addEventListener("click", function() {currentUser = usernameInput.value.trim(); if (currentUser === "") {currentUser = "JUGADOR";} profileUsername.textContent = currentUser; document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block"; currentGames = currentGames + 1; profileGames.textContent = currentGames;});
 
