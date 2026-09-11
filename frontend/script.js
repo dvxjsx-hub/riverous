@@ -5,8 +5,7 @@ let currentUser = "INVITADO"; const profileUsername = document.getElementById("p
 const profileGames = document.getElementById("profile-games");
 let currentGames = 0;
 
-enterBtn.addEventListener("click", function() {currentUser = usernameInput.value.trim(); if (currentUser === "") {currentUser = "JUGADOR";} profileUsername.textContent = currentUser; document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block";});
-currentGames = currentGames + 1; profileGames.textContent = currentGames;
+enterBtn.addEventListener("click", function() {currentUser = usernameInput.value.trim(); if (currentUser === "") {currentUser = "JUGADOR";} profileUsername.textContent = currentUser; document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block"; currentGames = currentGames + 1; profileGames.textContent = currentGames;});
 
 const profileBtn = document.getElementById("profile-btn");
 const profileMenu = document.getElementById("profile-menu");
