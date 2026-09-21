@@ -8,7 +8,6 @@ let currentUser = "INVITADO";
 const profileUsername = document.getElementById("profile-username");
 const profileGames = document.getElementById("profile-games");
 let currentGames = 0;
-const playBtn = document.getElementById("play-btn");
 
 // ==== FUNCIONES ====
 function addGame() {
@@ -32,6 +31,10 @@ enterBtn.addEventListener("click", function() {
 
   addGame();
 });
+
+// ==== BOTÓN JUGAR ====
+const playBtn = document.getElementById("play-btn");
+playBtn.addEventListener("click", function() { });
 
 // ==== PERFIL ====
 const profileBtn = document.getElementById("profile-btn");
