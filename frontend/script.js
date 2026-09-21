@@ -25,9 +25,9 @@ enterBtn.addEventListener("click", function() {
 
   profileUsername.textContent = currentUser;
 
-document.getElementById("welcome").style.display = "none";
+  document.getElementById("welcome").style.display = "none";
 
-document.getElementById("home").style.display = "block";
+  document.getElementById("home").style.display = "block";
 
   addGame();
 });
