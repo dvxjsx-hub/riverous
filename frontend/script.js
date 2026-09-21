@@ -9,7 +9,9 @@ const profileGames = document.getElementById("profile-games");
 let currentGames = 0;
 
 // ==== FUNCIONES ====
-function addGame() {currentGames = currentGames + 1; profileGames.textContent = currentGames;}
+function addGame() {
+currentGames = currentGames + 1;
+profileGames.textContent = currentGames;}
 
 
 // ==== BOTÓN ENTRAR ====
