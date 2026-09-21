@@ -34,7 +34,9 @@ enterBtn.addEventListener("click", function() {
 
 // ==== BOTÓN JUGAR ====
 const playBtn = document.getElementById("play-btn");
-playBtn.addEventListener("click", function() { });
+playBtn.addEventListener("click", function() {
+  playMenu.style.display = "block";
+});
 
 // ==== PERFIL ====
 const profileBtn = document.getElementById("profile-btn");
