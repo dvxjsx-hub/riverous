@@ -11,7 +11,8 @@ let currentGames = 0;
 // ==== FUNCIONES ====
 function addGame() {
 currentGames = currentGames + 1;
-profileGames.textContent = currentGames;}
+profileGames.textContent = currentGames;
+}
 
 
 // ==== BOTÓN ENTRAR ====
