@@ -16,7 +16,21 @@ profileGames.textContent = currentGames;
 
 
 // ==== BOTÓN ENTRAR ====
-enterBtn.addEventListener("click", function() {currentUser = usernameInput.value.trim(); if (currentUser === "") {currentUser = "JUGADOR";} profileUsername.textContent = currentUser; document.getElementById("welcome").style.display = "none"; document.getElementById("home").style.display = "block"; addGame();});
+enterBtn.addEventListener("click", function() {
+  currentUser = usernameInput.value.trim();
+
+  if (currentUser === "") {
+    currentUser = "JUGADOR";
+  }
+
+  profileUsername.textContent = currentUser;
+
+document.getElementById("welcome").style.display = "none";
+
+document.getElementById("home").style.display = "block";
+
+  addGame();
+});
 
 // ==== PERFIL ====
 const profileBtn = document.getElementById("profile-btn");
