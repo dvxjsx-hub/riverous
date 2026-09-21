@@ -35,9 +35,10 @@ enterBtn.addEventListener("click", function() {
 // ==== BOTÓN JUGAR ====
 const playBtn = document.getElementById("play-btn");
 const playMenu = document.getElementById("play-menu");
+const menu = document.getElementById("menu");
 
 playBtn.addEventListener("click", function() {
-  playMenu.style.display = "block";
+  menu.style.display = "none"; playMenu.style.display = "block";
 });
 
 // ==== PERFIL ====
