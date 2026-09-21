@@ -4,16 +4,16 @@ console.log("riverous iniciado");
 // ==== VARIABLES DE USUARIO ====
 const enterBtn = document.getElementById("enter-btn");
 const usernameInput = document.getElementById("username");
-let currentUser = "INVITADO"; const profileUsername = document.getElementById("profile-username");
+let currentUser = "INVITADO";
+const profileUsername = document.getElementById("profile-username");
 const profileGames = document.getElementById("profile-games");
 let currentGames = 0;
 
 // ==== FUNCIONES ====
 function addGame() {
-currentGames = currentGames + 1;
-profileGames.textContent = currentGames;
+  currentGames = currentGames + 1;
+  profileGames.textContent = currentGames;
 }
-
 
 // ==== BOTÓN ENTRAR ====
 enterBtn.addEventListener("click", function() {
@@ -37,15 +37,27 @@ const profileBtn = document.getElementById("profile-btn");
 const profileMenu = document.getElementById("profile-menu");
 
 profileUsername.textContent = currentUser;
-profileBtn.addEventListener("click", function() {profileMenu.style.display = "block";});
-const closeProfileBtn = document.getElementById("close-profile-btn"); closeProfileBtn.addEventListener("click", function() {profileMenu.style.display = "none";});
+
+profileBtn.addEventListener("click", function() {
+  profileMenu.style.display = "block";
+});
+
+const closeProfileBtn = document.getElementById("close-profile-btn");
+
+closeProfileBtn.addEventListener("click", function() {
+  profileMenu.style.display = "none";
+});
 
 // ==== CONFIGURACIÓN ====
 const settingsBtn = document.getElementById("settings-btn");
 const settingsMenu = document.getElementById("settings-menu");
 
-settingsBtn.addEventListener("click", function() {settingsMenu.style.display = "block";});
+settingsBtn.addEventListener("click", function() {
+  settingsMenu.style.display = "block";
+});
 
 const closeSettingsBtn = document.getElementById("close-settings-btn");
 
-closeSettingsBtn.addEventListener("click", function() {settingsMenu.style.display = "none";});
+closeSettingsBtn.addEventListener("click", function() {
+  settingsMenu.style.display = "none";
+});
