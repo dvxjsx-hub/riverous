@@ -8,8 +8,7 @@ let currentUser = "INVITADO";
 const profileUsername = document.getElementById("profile-username");
 const profileGames = document.getElementById("profile-games");
 let currentGames = 0;
-const playBtn =
-document.getElementById("play-btn");
+const playBtn = document.getElementById("play-btn");
 
 // ==== FUNCIONES ====
 function addGame() {
