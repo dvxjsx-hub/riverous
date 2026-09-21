@@ -34,6 +34,8 @@ enterBtn.addEventListener("click", function() {
 
 // ==== BOTÓN JUGAR ====
 const playBtn = document.getElementById("play-btn");
+const playMenu = document.getElementById("play-menu");
+
 playBtn.addEventListener("click", function() {
   playMenu.style.display = "block";
 });
