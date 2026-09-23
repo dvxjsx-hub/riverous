@@ -10,6 +10,10 @@ const profileGames = document.getElementById("profile-games");
 let currentGames = 0;
 
 // ==== FUNCIONES ====
+function mostrarPantalla(pantalla) {
+  pantalla.style.display = "block";
+}
+
 function addGame() {
   currentGames = currentGames + 1;
   profileGames.textContent = currentGames;
