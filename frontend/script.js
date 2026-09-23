@@ -43,10 +43,14 @@ enterBtn.addEventListener("click", function() {
 const playBtn = document.getElementById("play-btn");
 const playMenu = document.getElementById("play-menu");
 const menu = document.getElementById("menu");
+const closePlayMenu = document.getElementById("close-menu-btn");
 
 playBtn.addEventListener("click", function() {
-  mostrarPantalla(playMenu);
   ocultarPantalla(menu);
+  mostrarPantalla(playMenu);
+closePlayMenu.addEventListener("click", function() {
+  ocultarPantalla(playMenu);
+  mostrarPantalla(menu);
 });
 
 // ==== PERFIL ====
