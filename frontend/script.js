@@ -48,6 +48,7 @@ const closePlayMenu = document.getElementById("close-menu-btn");
 playBtn.addEventListener("click", function() {
   ocultarPantalla(menu);
   mostrarPantalla(playMenu);
+}
 closePlayMenu.addEventListener("click", function() {
   ocultarPantalla(playMenu);
   mostrarPantalla(menu);
