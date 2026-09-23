@@ -13,6 +13,9 @@ let currentGames = 0;
 function mostrarPantalla(pantalla) {
   pantalla.style.display = "block";
 }
+function ocultarPantalla(pantalla) {
+  pantalla.style.diaplay = "none";
+}
 
 function addGame() {
   currentGames = currentGames + 1;
