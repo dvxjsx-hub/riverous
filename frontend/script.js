@@ -14,7 +14,7 @@ function mostrarPantalla(pantalla) {
   pantalla.style.display = "block";
 }
 function ocultarPantalla(pantalla) {
-  pantalla.style.diaplay = "none";
+  pantalla.style.display = "none";
 }
 
 function addGame() {
