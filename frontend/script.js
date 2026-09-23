@@ -45,8 +45,8 @@ const playMenu = document.getElementById("play-menu");
 const menu = document.getElementById("menu");
 
 playBtn.addEventListener("click", function() {
-  menu.style.display = "none";
-  playMenu.style.display = "block";
+  mostrarPantalla(playMenu);
+  ocultarPantalla(menu);
 });
 
 // ==== PERFIL ====
