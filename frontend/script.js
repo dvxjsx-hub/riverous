@@ -1,9 +1,5 @@
 // ==== INICIO ====
 console.log("riverous iniciado");
-
-// ==== VARIABLES DE USUARIO ====
-const enterBtn = document.getElementById("enter-btn");
-
 // ==== FUNCIONES ====
 function mostrarPantalla(pantalla) {
   pantalla.style.display = "block";
@@ -12,28 +8,34 @@ function ocultarPantalla(pantalla) {
   pantalla.style.display = "none";
 }
 
-// ==== BOTÓN JUGAR ====
-const playBtn = document.getElementById("play-btn");
-
-playBtn.addEventListener("click", function() {
-  ocultarPantalla(menu);
-  mostrarPantalla(playMenu);
+// ==== BOTÓN DE INICIO ====
+const PlayBtn = document.getElementById("playbtn");
+const Log = document.getElementById("login");
+PlayBtn.addEventListener("click", function() {
+  ocultarPantalla(log);
+  mostrarPantalla(home);
 });
-closePlayMenu.addEventListener("click", function() {
-  ocultarPantalla(playMenu);
-  mostrarPantalla(menu);
+
+// ==== GRAVITY RUN ====
+const GRbutton = document.getElementById("GRbutton")
+const GRmenu = ducument.getElementById("GRmenu")
+const GRclose = document.getElementById("GRclose")
+
+GRbutton.addEventListener("click", function() {
+  ocultarPantalla(home);
+  mostrarPantalla(GRmenu);
 });
 
 // ==== CONFIGURACIÓN ====
-const settingsBtn = document.getElementById("settings-btn");
-const settingsMenu = document.getElementById("settings-menu");
+const SettingsBtn = document.getElementById("settingsbtn");
+const SettingsMenu = document.getElementById("settingsmenu");
 
-settingsBtn.addEventListener("click", function() {
-  settingsMenu.style.display = "block";
+SettingsBtn.addEventListener("click", function() {
+  SettingsMenu.style.display = "block";
 });
 
-const closeSettingsBtn = document.getElementById("close-settings-btn");
+const CloseSettingsBtn = document.getElementById("closesettingsbtn");
 
-closeSettingsBtn.addEventListener("click", function() {
-  settingsMenu.style.display = "none";
+CloseSettingsBtn.addEventListener("click", function() {
+  SettingsMenu.style.display = "none";
 });
