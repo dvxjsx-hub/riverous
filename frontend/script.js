@@ -11,19 +11,25 @@ function ocultarPantalla(pantalla) {
 // ==== BOTÓN DE INICIO ====
 const PlayBtn = document.getElementById("playbtn");
 const Log = document.getElementById("login");
+const Home = documment.getElementById("home");
 PlayBtn.addEventListener("click", function() {
-  ocultarPantalla(log);
-  mostrarPantalla(home);
+  ocultarPantalla(Log);
+  mostrarPantalla(Home);
 });
 
 // ==== GRAVITY RUN ====
 const GRbutton = document.getElementById("GRbutton")
-const GRmenu = ducument.getElementById("GRmenu")
+const GRmenu = document.getElementById("GRmenu")
 const GRclose = document.getElementById("GRclose")
 
 GRbutton.addEventListener("click", function() {
   ocultarPantalla(home);
   mostrarPantalla(GRmenu);
+});
+
+GRclose.addEventListener("click", function() {
+  mostrarPantalla(home);
+  ocultarPantalla(GRmenu);
 });
 
 // ==== CONFIGURACIÓN ====
