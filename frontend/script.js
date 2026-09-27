@@ -3,11 +3,6 @@ console.log("riverous iniciado");
 
 // ==== VARIABLES DE USUARIO ====
 const enterBtn = document.getElementById("enter-btn");
-const usernameInput = document.getElementById("username");
-let currentUser = "INVITADO";
-const profileUsername = document.getElementById("profile-username");
-const profileGames = document.getElementById("profile-games");
-let currentGames = 0;
 
 // ==== FUNCIONES ====
 function mostrarPantalla(pantalla) {
@@ -17,33 +12,8 @@ function ocultarPantalla(pantalla) {
   pantalla.style.display = "none";
 }
 
-function addGame() {
-  currentGames = currentGames + 1;
-  profileGames.textContent = currentGames;
-}
-
-// ==== BOTÓN ENTRAR ====
-enterBtn.addEventListener("click", function() {
-  currentUser = usernameInput.value.trim();
-
-  if (currentUser === "") {
-    currentUser = "JUGADOR";
-  }
-
-  profileUsername.textContent = currentUser;
-
-  document.getElementById("welcome").style.display = "none";
-
-  document.getElementById("home").style.display = "block";
-
-  addGame();
-});
-
 // ==== BOTÓN JUGAR ====
 const playBtn = document.getElementById("play-btn");
-const playMenu = document.getElementById("play-menu");
-const menu = document.getElementById("menu");
-const closePlayMenu = document.getElementById("close-menu-btn");
 
 playBtn.addEventListener("click", function() {
   ocultarPantalla(menu);
@@ -52,22 +22,6 @@ playBtn.addEventListener("click", function() {
 closePlayMenu.addEventListener("click", function() {
   ocultarPantalla(playMenu);
   mostrarPantalla(menu);
-});
-
-// ==== PERFIL ====
-const profileBtn = document.getElementById("profile-btn");
-const profileMenu = document.getElementById("profile-menu");
-
-profileUsername.textContent = currentUser;
-
-profileBtn.addEventListener("click", function() {
-  profileMenu.style.display = "block";
-});
-
-const closeProfileBtn = document.getElementById("close-profile-btn");
-
-closeProfileBtn.addEventListener("click", function() {
-  profileMenu.style.display = "none";
 });
 
 // ==== CONFIGURACIÓN ====
