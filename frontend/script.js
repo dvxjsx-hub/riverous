@@ -11,7 +11,7 @@ function ocultarPantalla(pantalla) {
 // ==== BOTÓN DE INICIO ====
 const PlayBtn = document.getElementById("playbtn");
 const Log = document.getElementById("login");
-const Home = documment.getElementById("home");
+const Home = document.getElementById("home");
 PlayBtn.addEventListener("click", function() {
   ocultarPantalla(Log);
   mostrarPantalla(Home);
@@ -23,12 +23,12 @@ const GRmenu = document.getElementById("GRmenu")
 const GRclose = document.getElementById("GRclose")
 
 GRbutton.addEventListener("click", function() {
-  ocultarPantalla(home);
+  ocultarPantalla(Home);
   mostrarPantalla(GRmenu);
 });
 
 GRclose.addEventListener("click", function() {
-  mostrarPantalla(home);
+  mostrarPantalla(Home);
   ocultarPantalla(GRmenu);
 });
 
@@ -37,7 +37,7 @@ const SettingsBtn = document.getElementById("settingsbtn");
 const SettingsMenu = document.getElementById("settingsmenu");
 
 SettingsBtn.addEventListener("click", function() {
-  SettingsMenu.style.display = "block";
+  mostrarPantalla(SettingsMenu);
 });
 
 const CloseSettingsBtn = document.getElementById("closesettingsbtn");
