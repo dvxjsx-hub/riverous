@@ -35,13 +35,14 @@ GRclose.addEventListener("click", function() {
 // ==== CONFIGURACIÓN ====
 const SettingsBtn = document.getElementById("settingsbtn");
 const SettingsMenu = document.getElementById("settingsmenu");
+const SettingsClose = document.getElementById("closesettingsbtn");
 
 SettingsBtn.addEventListener("click", function() {
+  ocultarPantalla(Home);
   mostrarPantalla(SettingsMenu);
 });
 
-const CloseSettingsBtn = document.getElementById("closesettingsbtn");
-
-CloseSettingsBtn.addEventListener("click", function() {
-  SettingsMenu.style.display = "none";
+SettingsClose.addEventListener("click", function() {
+  ocultarPantalla(SettingsMenu);
+  mostrarPantalla(Home);
 });
