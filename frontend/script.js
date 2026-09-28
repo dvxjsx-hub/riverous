@@ -9,18 +9,17 @@ function ocultarPantalla(pantalla) {
 }
 
 // ==== BOTÓN DE INICIO ====
+const Nickname = document.getElementById("nickname");
 const PlayBtn = document.getElementById("playbtn");
 const Log = document.getElementById("login");
 const Home = document.getElementById("home");
 PlayBtn.addEventListener("click", function() {
+  const Name = Nickname.value; document.getElementById("user").textContent = "Bienvenido, " + Name;
   ocultarPantalla(Log);
   mostrarPantalla(Home);
 });
 
 // ==== MENU =====
-const Nickname = document.getElementById("nickname");
-const Name = Nickname.value;
-document.getElementById("user").textContent = "Bienvenido, " + Name;
 
 // ==== GRAVITY RUN ====
 const GRbutton = document.getElementById("GRbutton")
