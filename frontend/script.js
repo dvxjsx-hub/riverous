@@ -17,6 +17,11 @@ PlayBtn.addEventListener("click", function() {
   mostrarPantalla(Home);
 });
 
+// ==== MENU =====
+const Nickname = document.getElementById("nickname");
+const Name = Nickname.value;
+document.getElementById("user").textContent = "Bienvenido, " + Name;
+
 // ==== GRAVITY RUN ====
 const GRbutton = document.getElementById("GRbutton")
 const GRmenu = document.getElementById("GRmenu")
