@@ -16,7 +16,8 @@ const Home = document.getElementById("home");
 PlayBtn.addEventListener("click", function() {
   const Name = Nickname.value; document.getElementById("user").textContent = "Bienvenido, " + Name;
   if (Name === "") {
-     console.log("Ingresa un Nickname")
+    const Nick = document.getElementById("nickerror");
+    mostrarPantalla(Nick);
   }
   else {
     ocultarPantalla(Log);
