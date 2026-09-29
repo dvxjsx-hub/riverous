@@ -15,12 +15,13 @@ const Log = document.getElementById("login");
 const Home = document.getElementById("home");
 PlayBtn.addEventListener("click", function() {
   const Name = Nickname.value; document.getElementById("user").textContent = "Bienvenido, " + Name;
-  if (Name = " ") {
+  if (Name === "") {
      console.log("Ingresa un Nickname")
   }
-  
- ocultarPantalla(Log);
- mostrarPantalla(Home);
+  else {
+    ocultarPantalla(Log);
+    mostrarPantalla(Home);
+  }
 });
 
 // ==== MENU =====
